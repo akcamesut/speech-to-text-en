@@ -83,21 +83,21 @@ recognition.onresult = function (event) {
     if (!mobileRepeatBug) {
         noteContent += transcript;
         noteTextarea.innerText = noteContent;
-        stopInstructions.innerText = 'Durduruldu';
-        instructions.innerText = 'Başlat';
+        stopInstructions.innerText = 'Stopped';
+        instructions.innerText = 'Start';
         cevabiKontrolEt(noteContent);
     }
 };
 
 recognition.onstart = function () {
-    instructions.innerText = 'Başladı';
-    stopInstructions.innerText = 'Durdur';
+    instructions.innerText = 'Started';
+    stopInstructions.innerText = 'Stop';
 }
 
 
 recognition.onerror = function (event) {
     if (event.error === 'no-speech') {
-        instructions.innerText = 'Ses algılanmadı. Tekrar deneyiniz.';
+        instructions.innerText = 'No sound detected. Try again.';
     }
 }
 window.addEventListener('load', (e) => {
@@ -126,14 +126,14 @@ startButton.addEventListener('click', function (e) {
 
 pauseButton.addEventListener('click', function (e) {
     recognition.stop();
-    instructions.innerText = 'Başlat';
+    instructions.innerText = 'Start';
 
 })
 
 function yeniOyun() {
     soruText.innerText = game.tekerleme[game.numara];
-    dogru.innerText = 'Toplam Doğru: ' + game.dogru;
-    yanlis.innerText = 'Toplam Yanlış: ' + game.yanlis;
+    dogru.innerText = 'Total Correct Answers: ' + game.dogru;
+    yanlis.innerText = 'Total Wrong Answers: ' + game.yanlis;
 }
 
 function cevabiKontrolEt(cevap) {
@@ -163,14 +163,14 @@ function cevabiKontrolEt(cevap) {
 }
 
 function yeniSoru() {
-    dogru.innerText = 'Toplam Doğru: ' + game.dogru;
-    yanlis.innerText = 'Toplam Yanlış: ' + game.yanlis;
+    dogru.innerText = 'Total Correct Answers: ' + game.dogru;
+    yanlis.innerText = 'Total Wrong Answers: ' + game.yanlis;
     document.getElementById('body').style.backgroundColor =  '#E1C340';
     game.numara++;
     if (game.numara === 20){
         game.numara = 0;
     }
-    stopInstructions.innerText = 'Durdur';
+    stopInstructions.innerText = 'Stop';
     soruText.innerText = game.tekerleme[game.numara];
 }
 
