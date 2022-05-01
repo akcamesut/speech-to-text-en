@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My English Level</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body style="background-color: #E1C340" id="body">
+<div class="container mt-5">
+    <div class="row justify-content-center text-center">
+        <div class="col">
+            <h1>MY ENGLISH LEVEL</h1>
+            <div class="row justify-content-center">
+                <div class="col-3 mt-5">
+                    <a id="start-record-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor"
+                             class="bi bi-mic-fill" viewBox="0 0 16 16">
+                            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                        <p class="mt-2" id="recording-instructions" style="font-weight: bold; font-size:1.4rem">Start</p>
+                    </a>
+
+                </div>
+                <div class="col-3 mt-5">
+                    <a id="pause-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor"
+                             class="bi bi-mic-mute-fill" viewBox="0 0 16 16">
+                            <path d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879L5.158 2.037A3.001 3.001 0 0 1 11 3z"/>
+                            <path d="M9.486 10.607 5 6.12V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z"/>
+                        </svg>
+                        <p class="mt-2" style="font-weight: bold; font-size:1.4rem" id="stop-instructions">Stop</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <button id="yeniSoru" class="btn btn-danger btn-lg">Change</button>
+                </div>
+            </div>
+            <div class="row justify-content-center border border-danger border-5">
+                <div class="col mt-5">
+                    <p id="soru" style="font-size: 2rem"></p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col mt-5">
+                    <div class="input-single" style="font-size:1.2rem">
+                        <label for="note-textarea">Your Answer: </label><p id="note-textarea"></p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-3">
+                <div class="col-3">
+                    <p id="dogru" style="font-weight: bold; font-size:1.4rem">Total Correct Answers: 0</p>
+                </div>
+                <div class="col-3">
+                    <p id="yanlis" style="font-weight: bold; font-size:1.4rem">Total Wrong Answers: 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
