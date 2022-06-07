@@ -7,6 +7,12 @@ try {
     $('.app').hide();
 }
 const kolayTekerlemeler = [
+    'Pencil',
+    'School,
+    'Friend',
+    'Name',
+    'City'
+    'Car'
     'Explict',
     'Unadulterated',
     'Through',
