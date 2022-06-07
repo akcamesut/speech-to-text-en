@@ -8,7 +8,7 @@ try {
 }
 const kolayTekerlemeler = [
     'Pencil',
-    'School,
+    'School',
     'Friend',
     'Name',
     'City'
