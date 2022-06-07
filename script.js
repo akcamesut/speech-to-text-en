@@ -11,8 +11,8 @@ const kolayTekerlemeler = [
     'School',
     'Friend',
     'Name',
-    'City'
-    'Car'
+    'City',
+    'Car',
     'Explict',
     'Unadulterated',
     'Through',
